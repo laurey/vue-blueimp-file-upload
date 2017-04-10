@@ -19,10 +19,18 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['*', '.js', '.vue', '.jsx', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      'jQuery': 'jqueyr',
+      '$': 'jquery',
+      'jquery': 'jquery',
+      'blueimp-tmpl': 'blueimp-tmpl/js/tmpl',
+      'load-image': 'blueimp-load-image/js/load-image',
+      'load-image-meta': 'blueimp-load-image/js/load-image-meta',
+      'load-image-exif': 'blueimp-load-image/js/load-image-exif',
+      'load-image-scale': 'blueimp-load-image/js/load-image-scale',
+      'canvas-to-blob': 'blueimp-canvas-to-blob/js/canvas-to-blob'
     }
   },
   module: {
