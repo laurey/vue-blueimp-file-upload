@@ -24,7 +24,7 @@ export default {
     return {
         msg: 'this is default message',
         option: {
-            url: '',
+            url: '/upload',
 			autoUpload: false,
             uploadTemplateId: null,
             downloadTemplateId: null,
